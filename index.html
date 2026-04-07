@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="cookies - O melhor da regiao molhado e cremoso !"/>
+  <meta property="og:image" content="https://projeto-cardapio-wine.vercel.app/assets/hamb-1.png"/>
+  <meta property="og:description" content="O melhor hamburuger caseiro de verdade!" />
+  <meta property="og:site_name" content="cookies" />
+  <link rel="stylesheet" href="./styles/output.css" />
+  <title>cookies - o melhor cookies da regiaos!</title>
+
+  <style>
+    /* Hotbar estilos */
+    .hotbar {
+      background-color: #1f1f1f;
+      padding: 12px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .hotbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .hotbar ul li {
+      margin-right: 30px;
+      position: relative;
+    }
+
+    .hotbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hotbar a:hover {
+      background-color: #ff7f50;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .hotbar a i {
+      font-size: 20px;
+    }
+
+    .hotbar .active {
+      background-color: #ff7f50;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .hotbar .active i {
+      color: white;
+    }
+
+    /* Estilo dos produtos */
+    .product-item {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      padding: 16px;
+      gap: 16px;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .product-item:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-info p {
+      margin: 0;
+    }
+
+    .product-info .product-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .product-info .product-description {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .product-info .product-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-info button {
+      background-color: #ff7f50;
+      color: white;
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+
+    .product-info button:hover {
+      background-color: #e06a38;
+      transform: scale(1.05);
+    }
+
+    .product-info button i {
+      margin-right: 8px;
+    }
+
+    /* Estilos da notificação */
+    .toastify {
+      background-color: #4caf50 !important;
+      color: white !important;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- HOTBAR -->
+  <nav class="hotbar">
+    <ul>
+      <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="menu.html"><i class="fas fa-cookie"></i> Cardápio</a></li>
+    </ul>
+  </nav>
+  <!-- FIM HOTBAR -->
+
+  <!-- HEADER -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+        src="./assets/bigjohn.png"
+        alt="Logo bigjohncookies"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+        BIG JONH COOKIES
+      </h1>
+
+      <span class="text-white font-medium">Rua de camilo 10, taquaral campinas - sp</span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á Dom - 00:00 as 23:00</span>
+      </div>
+
+    </div>
+  </header>
+  <!-- FIM HEADER -->
+
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nosso menu
+  </h2>
+
+  <!-- INICIO MENU -->
+  <div id="menu">
+    
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+      <!-- PRODUTO ITEM -->
+      <div class="product-item">
+        <img 
+          src="./assets/cookies1.jpg"
+          alt="cookies Smash"
+        />
+
+        <div class="product-info">
+          <p class="product-name">cookies Smash</p>
+          <p class="product-description">cookies deliciosos com chocolate derretido.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="product-price">R$ 18.90</p>
+            <button 
+              class="add-to-cart-btn"
+              data-name="cookies Smash"
+              data-price="18.90"
+            >
+              <i class="fas fa-cart-plus text-lg"></i> Adicionar
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="product-item">
+        <img 
+          src="./assets/cookies2.jpg"
+          alt="cookies Duplo"
+        />
+
+        <div class="product-info">
+          <p class="product-name">cookies Duplo</p>
+          <p class="product-description">cookies com duas camadas de chocolate.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="product-price">R$ 32.90</p>
+            <button 
+              class="add-to-cart-btn"
+              data-name="cookies Duplo"
+              data-price="32.90"
+            >
+              <i class="fas fa-cart-plus text-lg"></i> Adicionar
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+    </main>
+  </div>
+  <!-- FIM MENU -->
+
+  <!-- SCRIPT JS -->
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script>
+    // Função de adicionar ao carrinho
+    const buttons = document.querySelectorAll('.add-to-cart-btn');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const name = e.target.closest('.product-info').querySelector('.product-name').textContent;
+        const price = e.target.closest('.product-info').querySelector('.product-price').textContent;
+
+        Toastify({
+          text: `${name} foi adicionado ao carrinho por ${price}!`,
+          duration: 3000,
+          close: true,
+          backgroundColor: "#4caf50",
+          gravity: "top", 
+          position: "right",
+          stopOnFocus: true 
+        }).showToast();
+      });
+    });
+  </script>
+
+</body>
+</html>
