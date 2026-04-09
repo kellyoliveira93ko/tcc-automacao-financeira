@@ -73,6 +73,8 @@ Atuei diretamente nas seguintes atividades:
 ---
 ## 📊 Insights do Dashboard
 
+📌 *Os insights abaixo foram gerados com base em dados simulados, com o objetivo de demonstrar a capacidade de análise e interpretação de dados.*
+
 A análise dos dados permitiu identificar padrões relevantes no desempenho financeiro e operacional:
 
 - O negócio apresenta alta lucratividade, com margem superior a 150%, indicando forte controle sobre os custos em relação à receita.
