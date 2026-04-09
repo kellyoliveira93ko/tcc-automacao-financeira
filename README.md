@@ -71,6 +71,23 @@ Atuei diretamente nas seguintes atividades:
 * Distribuição de gastos por categoria
 
 ---
+## 📊 Insights do Dashboard
+
+A análise dos dados permitiu identificar padrões relevantes no desempenho financeiro e operacional:
+
+- O negócio apresenta alta lucratividade, com margem superior a 150%, indicando forte controle sobre os custos em relação à receita.
+
+- Observa-se variação nas vendas ao longo dos meses, com picos em determinados períodos, sugerindo possível sazonalidade no consumo.
+
+- Alguns produtos se destacam consistentemente entre os mais vendidos, indicando oportunidades para estratégias focadas em itens de maior demanda.
+
+- A distribuição de gastos evidencia maior concentração em categorias específicas, o que pode indicar pontos de otimização de custos.
+
+- A comparação entre receitas e despesas ao longo do tempo permite identificar períodos de maior eficiência financeira e possíveis momentos de atenção.
+
+Esses insights demonstram como a análise de dados pode apoiar decisões estratégicas e melhorar a gestão do negócio.
+
+---
 
 ## 📊 Resultados
 
