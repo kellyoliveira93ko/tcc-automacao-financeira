@@ -1,4 +1,4 @@
-# Automação Financeira e Comercial para Pequenos Negócios
+# 📊 Automação Financeira e Comercial para Pequenos Negócios
 
 Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) em Sistemas de Informação, com o objetivo de criar uma solução integrada para gestão de vendas e controle financeiro de pequenos negócios.
 
@@ -6,9 +6,9 @@ Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) em Sistemas de I
 
 ## 📌 Contexto
 
-Pequenos empreendedores frequentemente enfrentam dificuldades no controle de pedidos, estoque e finanças, utilizando processos manuais que geram erros e falta de organização.
+Pequenos empreendedores frequentemente enfrentam dificuldades no controle de pedidos, estoque e finanças, utilizando processos manuais que geram erros, retrabalho e falta de visibilidade dos dados.
 
-Este projeto propõe uma solução digital para centralizar essas informações e facilitar a tomada de decisão.
+Este projeto propõe uma solução digital para centralizar essas informações e apoiar a tomada de decisão por meio da organização e análise de dados.
 
 ---
 
@@ -16,10 +16,16 @@ Este projeto propõe uma solução digital para centralizar essas informações 
 
 Desenvolver um sistema capaz de:
 
-- Centralizar pedidos e vendas  
-- Auxiliar no controle financeiro  
-- Organizar dados para análise  
-- Permitir evolução para dashboards e BI  
+* Centralizar pedidos e vendas
+* Auxiliar no controle financeiro
+* Organizar dados para análise
+* Permitir evolução para dashboards e Business Intelligence (BI)
+
+---
+
+## 📷 Visualização do Dashboard
+
+![Dashboard](./dashboard.png)
 
 ---
 
@@ -27,42 +33,79 @@ Desenvolver um sistema capaz de:
 
 Atuei diretamente nas seguintes atividades:
 
-- Criação de dados genéricos para simulação e testes  
-- Desenvolvimento de dashboards no Power BI  
-- Apoio na estruturação do banco de dados  
-- Contribuição na elaboração do artigo acadêmico  
+* Criação de dados simulados para testes e validação
+* Desenvolvimento de dashboards no Power BI
+* Estruturação e organização de dados para análise
+* Apoio na modelagem do banco de dados
+* Contribuição na elaboração do artigo acadêmico
 
 ---
 
 ## 🛠 Tecnologias utilizadas
 
-- HTML / CSS / JavaScript  
-- Node.js / Express  
-- PostgreSQL  
-- Power BI  
+### 💻 Desenvolvimento
+
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Express
+
+### 🗄️ Banco de Dados
+
+* PostgreSQL
+
+### 📊 Dados & BI
+
+* Power BI
+
+---
+
+## 📈 Principais análises (Dashboard)
+
+* Renda bruta, gastos e lucro
+* Percentual de lucratividade
+* Evolução mensal de receitas e despesas
+* Análise de vendas por período
+* Identificação dos itens mais vendidos
+* Distribuição de gastos por categoria
 
 ---
 
 ## 📊 Resultados
 
-- Estruturação de base de dados organizada  
-- Criação de dashboards para análise financeira  
-- Simulação de dados para testes do sistema  
+* Estruturação de base de dados organizada
+* Desenvolvimento de dashboards para análise financeira
+* Simulação de dados para testes do sistema
+* Melhoria na visualização e interpretação dos dados
+
+---
+
+## 💡 Possíveis aplicações
+
+* Apoio à tomada de decisão em pequenos negócios
+* Controle financeiro mais eficiente
+* Identificação de oportunidades de melhoria no negócio
 
 ---
 
 ## 👥 Projeto em grupo
 
-- Kelly Oliveira  
-- Matheus (repositório original: https://github.com/Matheushsp/Tcc-main)  
+* Kelly Oliveira
+* Matheus (repositório original: https://github.com/Matheushsp/Tcc-main)
 
 ### 🎓 Orientação
 
-- Prof. Leandro Grando (Orientador)  
+* Prof. Leandro Grando (Orientador)
   https://lgrando1.github.io/
 
 ---
 
 ## 📌 Observação
 
-Este projeto possui fins acadêmicos e demonstra habilidades em desenvolvimento de sistemas e análise de dados.
+Este projeto possui fins acadêmicos e demonstra habilidades em desenvolvimento de sistemas, análise de dados e construção de soluções voltadas a negócio.
+
+---
+
+✨ *Projeto que integra desenvolvimento de sistemas com análise de dados para geração de insights estratégicos.*
+
